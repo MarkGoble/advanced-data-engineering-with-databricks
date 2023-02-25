@@ -104,27 +104,32 @@ DA.install_datasets(reinstall=False)
 
 # MAGIC %md
 # MAGIC ## 00 - Getting Started
-# MAGIC * [Getting Started - Agenda]($./00 - Getting Started - Agenda)
+# MAGIC | item | done |
+# MAGIC | ----------- | ----------- |
+# MAGIC | [Getting Started - Agenda]($./00 - Getting Started - Agenda) | &check;
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## 01 - Architecting for the Lakehouse
-# MAGIC * Prerequisite Content - OPTIONAL
-# MAGIC   * [ADE 99.1 - Setting Up Tables]($./99 - OPTIONAL Content/ADE 99.1 - Setting Up Tables)
-# MAGIC   * [ADE 99.2 - Optimizing Data Storage]($./99 - OPTIONAL Content/ADE 99.2 - Optimizing Data Storage)
-# MAGIC   * [ADE 99.3 - Understanding Delta Lake Transactions]($./99 - OPTIONAL Content/ADE 99.3 - Understanding Delta Lake Transactions)
-# MAGIC * [ADE 1.1 - Streaming Design Patterns]($./01 - Architecting for the Lakehouse/ADE 1.1 - Streaming Design Patterns)
+# MAGIC 
+# MAGIC | item | optional | done |
+# MAGIC | ----------- | ----------- | ----------- |
+# MAGIC | [ADE 99.1 - Setting Up Tables]($./99 - OPTIONAL Content/ADE 99.1 - Setting Up Tables) | yes |&check;
+# MAGIC | [ADE 99.2 - Optimizing Data Storage]($./99 - OPTIONAL Content/ADE 99.2 - Optimizing Data Storage) | yes | &check;
+# MAGIC | [ADE 99.3 - Understanding Delta Lake Transactions]($./99 - OPTIONAL Content/ADE 99.3 - Understanding Delta Lake Transactions) | yes
+# MAGIC | [ADE 1.1 - Streaming Design Patterns]($./01 - Architecting for the Lakehouse/ADE 1.1 - Streaming Design Patterns) | no |
 
 # COMMAND ----------
 
 # MAGIC %md
 # MAGIC ## 02 - Bronze Ingestion Patterns
-# MAGIC * Prerequisite Content - OPTIONAL
-# MAGIC   * [ADE 99.4 - Using Clone with Delta Lake]($./99 - OPTIONAL Content/ADE 99.4 - Using Clone with Delta Lake)
-# MAGIC   * [ADE 99.5 - Auto Loader]($./99 - OPTIONAL Content/ADE 99.5 - Auto Loader)
-# MAGIC * [ADE 2.1 - Auto Load to Multiplex Bronze]($./02 - Bronze Ingestion Patterns/ADE 2.1 - Auto Load to Multiplex Bronze)
-# MAGIC * [ADE 2.2 - Streaming from Multiplex Bronze]($./02 - Bronze Ingestion Patterns/ADE 2.2 - Streaming from Multiplex Bronze)
+# MAGIC | item | optional | done |
+# MAGIC | ----------- | ----------- | ----------- |
+# MAGIC | [ADE 99.4 - Using Clone with Delta Lake]($./99 - OPTIONAL Content/ADE 99.4 - Using Clone with Delta Lake) | yes |
+# MAGIC | [ADE 99.5 - Auto Loader]($./99 - OPTIONAL Content/ADE 99.5 - Auto Loader) | yes | 
+# MAGIC | [ADE 2.1 - Auto Load to Multiplex Bronze]($./02 - Bronze Ingestion Patterns/ADE 2.1 - Auto Load to Multiplex Bronze) | no |
+# MAGIC | [ADE 2.2 - Streaming from Multiplex Bronze]($./02 - Bronze Ingestion Patterns/ADE 2.2 - Streaming from Multiplex Bronze) | no | 
 
 # COMMAND ----------
 

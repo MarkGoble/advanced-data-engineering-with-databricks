@@ -168,7 +168,7 @@ def parse_table_keys(database, table=None):
         table_keys[table_name] = [kv for kv in key_values if not kv.startswith("delta.")]
     return table_keys
 
-parse_table_keys(DA.db_name)   
+parse_table_keys(DA.db_name, 'pii_test')   
 
 # COMMAND ----------
 
@@ -186,8 +186,10 @@ parse_table_keys(DA.db_name)
 
 # MAGIC %sql
 # MAGIC -- TODO
-# MAGIC <FILL_IN> ${da.db_name}.challenge
-# MAGIC <FILL_IN>
+# MAGIC CREATE TABLE ${da.db_name}.challenge
+# MAGIC (ID Int, NAME String, Description String, Value Long )
+# MAGIC COMMENT 'Something I made up'
+# MAGIC TBLPROPERTIES ('contains_pii' = False);
 
 # COMMAND ----------
 

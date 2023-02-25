@@ -28,6 +28,15 @@
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC Describe detail raw_data
+
+# COMMAND ----------
+
+display(dbutils.fs.ls('dbfs:/user/mark.goble@goble.co.uk/dbacademy/adewd/1.2/raw_parquet'))
+
+# COMMAND ----------
+
 # MAGIC %md
 # MAGIC ## Create a Delta Table
 # MAGIC 
@@ -295,9 +304,23 @@ display(df)
 
 # COMMAND ----------
 
+# MAGIC %sql
+# MAGIC DESCRIBE TABLE no_part_table
+
+# COMMAND ----------
+
 # MAGIC %sql 
 # MAGIC -- TODO
-# MAGIC <FILL-IN>
+# MAGIC OPTIMIZE no_part_table
+# MAGIC ZORDER BY (timestamp)
+
+# COMMAND ----------
+
+# MAGIC %sql
+# MAGIC 
+# MAGIC CREATE BLOOMFILTER INDEX
+# MAGIC ON TABLE no_part_table
+# MAGIC FOR COLUMNS(key OPTIONS (fpp=0.1, numItems=200))
 
 # COMMAND ----------
 
